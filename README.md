@@ -56,5 +56,7 @@ Here "spName" is the name of storage procedure you want to call and parameters i
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
 
+## Note
+currently support for only MsSql database, we will provide support for other databases very soon.
 
 ## Thanks and Happy Coding.... 😊
