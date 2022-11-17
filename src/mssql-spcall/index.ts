@@ -1,6 +1,5 @@
 import { Connection } from 'typeorm';
 
-
 export class MssqlSpcallService {
 
     public async call(connection: Connection, name: string, parameters?: object) {

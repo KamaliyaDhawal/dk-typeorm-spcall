@@ -1,6 +1,6 @@
 {
   "name": "dk-typeorm-spcall",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Aim: Providing easy functionality for call SPs using typescript mainly for nestjs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -21,10 +21,6 @@
   ],
   "author": "Dhaval Kamaliya",
   "license": "ISC",
-  "dependencies": {
-    "mssql": "^7.3.5",
-    "typeorm": "^0.3.10"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KamaliyaDhawal/dk-typeorm-spcall"
@@ -41,5 +37,9 @@
     "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "mssql": "^9.0.1",
+    "typeorm": "^0.3.10"
   }
 }
