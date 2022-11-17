@@ -1,6 +1,6 @@
 {
   "name": "dk-typeorm-spcall",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Aim: Providing easy functionality for call SPs using typescript mainly for nestjs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
