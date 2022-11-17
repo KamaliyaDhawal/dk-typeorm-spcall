@@ -2,19 +2,16 @@ import { Connection } from 'typeorm';
 
 
 export class MssqlSpcallService {
-    constructor(
-        private connection: Connection
-    ) { }
 
-    public async call(name: string, parameters?: object) {
+    public async call(connection: Connection, name: string, parameters?: object) {
         try {
             let query = `EXECUTE ${name}`;
             if (parameters != undefined && parameters != null) {
                 const values: any[] = Object.values(parameters);
                 query += await this.createSp(parameters);
-                return await this.connection.query(query, values);
+                return await connection.query(query, values);
             } else {
-                await this.connection.query(query);
+                await connection.query(query);
             }
         } catch (error) {
             console.error("Error while call SP", error);
