@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,14 @@
     "mssql": "^7.3.5",
     "typeorm": "^0.3.10"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KamaliyaDhawal/dk-typeorm-spcall"
+  },
+  "bugs": {
+    "url": "https://github.com/KamaliyaDhawal/dk-typeorm-spcall/issues"
+  },
+  "homepage": "https://github.com/KamaliyaDhawal/dk-typeorm-spcall#readme",
   "devDependencies": {
     "prettier": "^2.7.1",
     "tslint": "^6.1.3",
